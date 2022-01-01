@@ -1,9 +1,10 @@
-import React from 'react';
-import propTypes from 'prop-types';
+import React from "react";
+import propTypes from "prop-types";
+import Header from "../components/Header";
 
 const Page = ({ children }) => (
   <div>
-    <h1>hello</h1>
+    <Header />
     {children}
   </div>
 );
