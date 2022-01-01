@@ -4,9 +4,9 @@ import Link from "next/link";
 const Nav = () => {
   return (
     <div>
+      <Link href="/products">products</Link>
       <Link href="/account">account</Link>
       <Link href="/order">order</Link>
-      <Link href="/product">product</Link>
       <Link href="/sell">sell</Link>
     </div>
   );
