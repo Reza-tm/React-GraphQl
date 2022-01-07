@@ -18,7 +18,7 @@ const MainApp = ({ Component, pageProps, apollo }) => (
   </ApolloProvider>
 );
 
-MyApp.getInitialProps = async function ({ Component, ctx }) {
+MainApp.getInitialProps = async function ({ Component, ctx }) {
   let pageProps = {};
   if (Component.getInitialProps) {
     pageProps = await Component.getInitialProps(ctx);
@@ -27,4 +27,4 @@ MyApp.getInitialProps = async function ({ Component, ctx }) {
   return { pageProps };
 };
 
-export default withData(MyApp);
+export default withData(MainApp);

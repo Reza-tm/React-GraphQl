@@ -16,6 +16,7 @@ html{
   --offWhite:#ededed;
   --bs : 0 12px 24px 0 rgba(0 , 0 ,0 ,0.09) ;
   box-sizing: border-box;
+  font-size: 10px;
 }
 * , *::after , *::before {
   box-sizing: inherit;
