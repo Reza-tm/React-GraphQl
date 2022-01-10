@@ -30,6 +30,8 @@ body{font-family:'radnika' ; padding: 0;margin: 0;font-size: 1.5rem;line-height:
 
 const Wrapper = styled.div`
   max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 const Page = ({ children }) => (
