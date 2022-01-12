@@ -1,7 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Item = styled.div`
   background: white;
+  cursor: pointer;
   border: 1px solid var(--offWhite);
   box-shadow: var(--bs);
   position: relative;

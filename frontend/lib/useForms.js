@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export const useForms = () => {
-  const [inputs, setInputs] = useState({});
+export const useForms = (initial = {}) => {
+  const [inputs, setInputs] = useState(initial);
+  const initialValues = Object.values(initial).join("");
+
+  useEffect(() => {
+    setInputs(initial);
+  }, [initialValues]);
 
   const changeHandler = (e) => {
     let { value, name, type, files } = e.target;
