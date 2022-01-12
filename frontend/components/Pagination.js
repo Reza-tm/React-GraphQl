@@ -13,6 +13,7 @@ const Pagination = ({ page }) => {
   if (error) return <DisplayError error={error} />;
   const { count } = data._allProductsMeta;
   const pagesNumber = Math.ceil(count / perPage);
+  console.log(page, pagesNumber);
   return (
     <PaginationStyles>
       <Head>
