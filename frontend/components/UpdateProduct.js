@@ -17,8 +17,8 @@ const UpdateProduct = ({ id }) => {
     }
   );
   if (loading) return <h2>loading ...</h2>;
-
   if (updateLoading) return <h2>loading ...</h2>;
+
   return (
     <Form
       onSubmit={async (e) => {
