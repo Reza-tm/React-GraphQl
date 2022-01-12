@@ -6,7 +6,6 @@ import { formatMoney } from "../lib/formatMoney";
 import { useRouter } from "next/router";
 import { useMutation } from "@apollo/client";
 import { DELETE_SINGLE_PRODUCT } from "../Graphql/mutations/DeleteSingleProduct";
-import { ALL_PRODUCTS_QUERY } from "../Graphql/queries/ProductsQueries";
 import DisplayError from "./ErrorMessage";
 
 export default function Product({ product }) {
